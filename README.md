@@ -97,7 +97,7 @@ def interrupt_fired(channel):
   2
   3 import time
   4 import RPi.GPIO as GPIO
-  5 import request, json
+  5 import requests,vo json
   6 from influxdb import InfluxDBClient as influxdb
   7
   8 GPIO.setmode(GPIO.BCM)
@@ -134,4 +134,8 @@ def interrupt_fired(channel):
  39                 finally:
  40                     clent.close()
  41         print("running influxdb OK")
+
+
+#grafena 들어가기
+ sudo service grafana-server start
 
