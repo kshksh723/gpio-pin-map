@@ -59,7 +59,7 @@ Try 'cp --help' for more information.
 pi@raspberrypi:~/jjvision $ cp /home/pi/work/pir.py
 cp: missing destination file operand after '/home/pi/work/pir.py'
 Try 'cp --help' for more information.
-pi@raspberrypi:~/jjvision $ cp /home/pi/work/pir.py .
+pi@rhiaspberrypi:~/jjvision $ cp /home/pi/work/pir.py .
 cp: cannot stat '/home/pi/work/pir.py': No such file or directory
 pi@raspberrypi:~/jjvision $ cp /home/pi/work/pir.py.
 cp: missing destination file operand after '/home/pi/work/pir.py.'
@@ -67,3 +67,18 @@ Try 'cp --help' for more information.
 pi@raspberrypi:~/jjvision $ add .
 -bash: add: command not found
 ```
+```
+###
+```
+def interrupt_fired(channel):
+ print("interrupt Fired")
+ a=1
+ print(a)
+ GPIO.add_event_detect(4, GPIO.FALLING, callback=interrupt_fired)
+ 
+ while(True):
+   time.sleep(1)
+   a = 0
+   print("timer fired")
+   print(a)
+   `````
