@@ -143,4 +143,5 @@ import RPi.GPIO as GPIO
  ```
  ### 
  bt ->  블루투스 끄기
+ 
 
