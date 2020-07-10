@@ -139,4 +139,8 @@ import RPi.GPIO as GPIO
 
 #grafena 들어가기
  sudo service grafana-server start
+ 
+ ```
+ ### 
+ bt ->  블루투스 끄기
 
